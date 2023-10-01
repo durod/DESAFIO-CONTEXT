@@ -5,7 +5,6 @@ import { Card } from "react-bootstrap"; // Importa el componente Card de react-b
 const Favorites = () => {
   const { data } = useContext(Context);
 
-  // Filtra las fotos que tienen liked igual a true
   const likedPhotos = data.filter((foto) => foto.liked);
 
   return (
